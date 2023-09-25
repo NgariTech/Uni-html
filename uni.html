@@ -1,38 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>university home</title>
-<link rel="stylesheet" href="Uni.css.css">
-       
+        <link rel="stylesheet" href="Uni.css">
     </head>
     <body>
+        <div class="header">
+            <nav id="navbar">
+                <img src="Uni logo.jpg" class="logo">
+                <ul id="menu">
+                    <li>ABOUT</li>
+                    <li>PROGRAMMES</li>
+                    <li>RESEARCH</li>
+                    <li>INNOVATION</li>
+                    <li>MEDIA DESK</li>
+                </ul>
+            </nav>
+        </div>
+        <p class="text">RESEARCH RESOURCES
+            University Library
+            Research, Innovation and Enterprise
+            Iverson collage Repository
+            Search for Iverson collage Publications
+            Intellectual Property
+            Iverson collage Academic Journals
+            Iverson collage Ethics and Research Review Committee
+            Iverson Suppliers Portal</p>
+        
+        <p class="text">STUDENT RESOURCES
+            Faculty ICT Support Emails
+            Eballot
+            Online Application for self sponsored Applicants
+            Student Portal
+            SOMAS
+            E-Learning Portal
+            Library Services Portal
+            Transcript/Certificate Application
+            HELB
+            Employer's Graduates verification
+        </p>
 
-<div class="first-tab">
-    <img class="img-uni" src="C:\Uni html\Uni logo .2 - Copy.jpg">
+        <p class="text">STAFF RESOURCES
+            Staff Email
+            School WIFI Page
+            School Intranet
+            Search Staff
+            Staff SMIS
+            Online Leave Application
+        </p>
+
+        <p class="text">CONTACT US
+            Address: P.O. Box 000-8008, Nairobi, Kenya
+            Phone: (+254) 007707070
+            Email: iversonc@edu
+        </p>
+    </body>
 
 
-    <nav class="menu">
-        <ul>
-            <li><a href="#"> ADMISSIONS</a></li>
-            <li><a href="#">RESEARCH</a></li>
-            <li><a href="#">NEWS & EVENTS</a></li>
-            <li><a href="#">ABOUT</a></li>
-
-        </ul>
-    </nav>
-
-
-
-
-        <form action="" class="search bar">
-            <input class="search button" type="text" placeholder="search anything" name="q">
-            <button>Search</button>
-        </form>
-
-</div>
-
-    
-        </body>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky"); 
+            }
+            else{
+                 navbar.classList.remove("sticky");    
+            }
+        }
+    </script>
 </html>
 
 
