@@ -22,7 +22,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    list-style: none;
+    list-style-type: circle;
     margin: 20px 30px;
     color: #fff;
 }
